@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/slider.css">
+  <link rel="stylesheet" href="./css/toogle.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../js/slider-value.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="title">
+  <h1>Simple, traffic-based pricing</h1>
+  <span>Sign-up for our 30-day trial.</span><span>No credit card required.</span>
+</div>
+<div class="card">
+  <div class="card-top">
+    <span class="card-top-pageviews"><span class="card-top-pageviews-num">100</span>K PAGEVIEWS</span>
+    <span class="card-top-value"><span class="range-slider__value">$0</span><span>/</span><span >month</span></span>
+  </div>
+  <div class="range-slider">
+    <input class="range-slider__range" type="range" value="16" min="0.00" max="32.00">  
+  </div>
+  <div class="card-middle">
+      <span>Monthly Billing</span>
+    <label class="switch">
+      <input type="checkbox" checked>
+      <span class="slider round"></span>
+    </label>
+    <span>Yearly Billing </span>
+    <span class="discount-reduced discount-tag">-25%</span><span class="discount-tag">25% discount</span>
+</div>
+<hr class="divider">
+  <div class="card-bottom">
+    <div>
+      <div class="card-list">
+        <nav>Unlimited websites</nav>
+        <nav>100% data ownership</nav>
+        <nav>Email reports</nav>
+      </div>
+    </div>
+    <div>
+      <button>Start my trial</button>
+    </div>
+  </div>
+</div>
+  <div class="footer">
+    <span>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</span> 
+    <span>Coded by: <a href="#">Sergio</a>.</span>
+  </div>
+</body>
+</html>
